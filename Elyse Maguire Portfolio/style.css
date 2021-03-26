@@ -1,0 +1,133 @@
+* {
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      margin: 9vh auto;
+      background-color: inherit;
+      background-attachment: fixed;
+      background-image: url("https://images.unsplash.com/photo-1524126674340-63807415b0f7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80");
+      background-position: center;
+      background-size: cover;
+      background-repeat: repeat;
+      font-family: "Lora", serif;
+    }
+
+    .main {
+      box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: flex-start;
+      width: 820px;
+      height: 600px;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+    .menu-bar {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: inherit;
+    }
+    .item {
+      color: black;
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      padding: 14px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      background-image: linear-gradient(rgb(19, 18, 17), rgb(255, 200, 17)),
+        linear-gradient(#0c0b0b, #3d3c09);
+      background-size: 100% 2px, 0 2px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 1.5s linear;
+    }
+
+    .item:hover {
+      background-size: 0 2px, 100% 2px;
+      color: rgb(112, 88, 10);
+    }
+
+    #button1:hover {
+      transition: font-size 1s;
+      font-size: 15px;
+    }
+    .side-color {
+      width: 269px;
+      position: absolute;
+      height: 600px;
+      display: block;
+      box-sizing: border-box;
+      z-index: 1;
+      background-color: #ffc802e6;
+      opacity: 0.75;
+      border-radius: 10px 0px 0px 10px;
+    }
+    .pic-box {
+      width: 45%;
+      height: 520px;
+      display: block;
+      position: relative;
+      background-color: inherit;
+    }
+    .pic {
+      border-radius: 2px;
+      content: url("https://i.pinimg.com/736x/63/23/66/632366804481df8e21f0c110abded518.jpg");
+      max-width: 80%;
+      height: 420px;
+      position: absolute;
+      left: 55px;
+      z-index: 1;
+    }
+    .pic-bot {
+      background-color: black;
+      width: 280px;
+      box-sizing: border-box;
+      height: 60px;
+      position: absolute;
+      z-index: 1;
+      left: 55px;
+      bottom: 40px;
+    }
+    .pic-bot div {
+      cursor: pointer;
+    }
+    .content {
+      margin: 0 auto;
+      width: 55%;
+      height: auto;
+      display: block;
+      box-sizing: border-box;
+      background-color: inherit;
+      padding-right: 10px;
+    }
+    .progress {
+      position: relative;
+      z-index: 2;
+      height: 1.5px;
+      bottom: -50%;
+      margin-left: 35px;
+      margin-right: 35px;
+      background-color: grey;
+    }
+    .arrow-right {
+      width: 0;
+      height: 0;
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-left: 60px solid green;
+    }
+    .progress-bar {
+      background-color: gold;
+    }
+    .read-more:hover {
+      transition: margin-left 1.2s;
+      margin-left: 10px;
+    }
